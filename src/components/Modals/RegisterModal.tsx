@@ -43,7 +43,7 @@ export const RegisterModal = () => {
         loginModal.onOpen();
       })
       .catch((error) => {
-        toast.error("error");
+        console.log(error.message);
       })
       .finally(() => {
         setIsLoading(false);
